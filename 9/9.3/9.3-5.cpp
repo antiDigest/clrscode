@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int A[1000];
+int A[100];
 
 int insertionSort(int K[], int start, int end, int index){
 	int i,j, key;
@@ -14,7 +14,7 @@ int insertionSort(int K[], int start, int end, int index){
 	for(j=start;j<=end;j++){
 		key = K[j];
 		i = j-1;
-		while(i>=0 && K[i]<key){
+		while(i>=start && K[i]<key){
 			K[i+1] = K[i];
 			i = i-1;
 			K[i+1] = key;
@@ -66,7 +66,7 @@ int Rselect(int B[], int start, int end, int index){
 
 int Dselect(int start, int end, int index){
 	// int p;
-	int n = start-end+1;
+	int n = end-start+1;
 	int B[n], r;
 	int k=0;
 	for(int i=start;i<=end;i+=5){
@@ -83,6 +83,7 @@ int Dselect(int start, int end, int index){
 }
 
 int main(){
+
 	int n, k;
 	cin >> n;
 
@@ -93,7 +94,7 @@ int main(){
 	cout << "Numbers:" << endl;
 
 	while(k){
-		A[n-k] = rand() % 200+1;
+		A[n-k] = rand() % n+1;
 		cout << A[n-k] << endl;
 		k--;
 	}
