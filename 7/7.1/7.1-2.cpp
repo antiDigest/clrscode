@@ -21,8 +21,8 @@ int partition(int A[], int start, int end){
 	}
 
 	temp = A[i];
-	A[i] = A[start];
-	A[start] = temp;
+	A[i] = A[end];
+	A[end] = temp;
 
 	return i;
 }
