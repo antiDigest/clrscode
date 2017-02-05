@@ -14,7 +14,7 @@ int partition(int start, int end){
 	int i = start;
 
 	for(int j=start;j<end;j++){
-		if(pivot > A[j]){
+		if(pivot < A[j]){
 			temp = A[i];
 			A[i] = A[j];
 			A[j] = temp;
