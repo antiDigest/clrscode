@@ -18,3 +18,4 @@ CLRS ain't gonna solve itself.
 |[Minimum](https://github.com/evamy/clrscode/blob/master/9/9.1/9.1-1.cpp)|(n+logn-2) comparisons||
 |[Randomised Select](https://github.com/evamy/clrscode/blob/master/9/9.2/9.2-3.cpp)|O(n)||
 |[Deterministic Select](https://github.com/evamy/clrscode/blob/master/9/9.3/9.3-5.cpp)|O(n)||
+|[Counting Sort](https://github.com/evamy/clrscode/blob/master/8/8.2/8.2-1.cpp)|O(n+k)||
