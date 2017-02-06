@@ -1,20 +1,23 @@
 // Maximum Subarray Problem !
 
+
+#include <cstdlib>
+#include <ctime>
 #include <iostream>
 // #include "sort.h"
 using namespace std;
 
 int msa_n2(int A[], int n){
 	int p[n+1];
-	p[0] = 0;
+	p[-1] = 0;
 	int maxi = 0, maxj = 0, maxsum = 0, sum=0;
 
-	for (int i = 1; i <= n; i++){
+	for (int i = 0; i < n; i++){
 		p[i] = p[i-1] + A[i];
 	}
 
-	for (int i = 1; i <= n; i++){
-		for (int j = i+1; j < n; j++){
+	for (int i = 0; i < n; i++){
+		for (int j = i; j < n; j++){
 			sum = p[j] - p[i-1];
 			if (sum > maxsum){
 				maxsum = sum;
@@ -30,13 +33,17 @@ int msa_n2(int A[], int n){
 int main(){
 	
 	int n;
-	cout << "No. of numbers "; 
 	cin >> n;
-	int k=n;
-	int A[n+1];
-	while(k){
-		cin >> A[n-k+1];
-		k--;
+	int A[n];
+	int l;
+	l=n;
+
+	cout << "Numbers: "<< endl;
+	while(l){
+
+		A[n-l] = rand() % (50+1)-25;
+		cout << A[n-l] << endl;
+		l--;
 	}
 	msa_n2(A,n);
 	return 0;
