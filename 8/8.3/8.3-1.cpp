@@ -42,6 +42,7 @@ int main(){
 	cin >> k;
 	int l;
 	l=n;
+	srand(time(NULL));
 
 	cout << "Un-Sorted: "<< endl;
 	while(l){
