@@ -14,6 +14,7 @@ CLRS ain't gonna solve itself.
 |[Randomised Quick Sort](https://github.com/evamy/clrscode/blob/master/7/7.3/7.3-1-2.cpp)|O(n*logn)||
 |[Quick Sort with Insertion Sort](https://github.com/evamy/clrscode/blob/master/7/7.4/7.4-5.cpp)|O(nk + nlog(n/k))||
 |[Quick Sort with median of 3](https://github.com/evamy/clrscode/blob/master/7/7.4/7.4-6.cpp)|O(n*logn)||
+|[Tail Recursive Quick Sort](https://github.com/evamy/clrscode/blob/master/7/7-4.cpp)|O(n*logn)||
 |[MinMax](https://github.com/evamy/clrscode/blob/master/9/9.1/9.1-2.cpp)|(3n/2) comparisons||
 |[Minimum](https://github.com/evamy/clrscode/blob/master/9/9.1/9.1-1.cpp)|(n+logn-2) comparisons||
 |[Randomised Select](https://github.com/evamy/clrscode/blob/master/9/9.2/9.2-3.cpp)|O(n)||
