@@ -1,4 +1,4 @@
-// Max Heapify
+// Build Max Heap
 
 #include <cstdlib>
 #include <ctime>
@@ -6,34 +6,36 @@
 
 using namespace std;
 
-int A[10000];
+int A[100];
 
 int left(int i){
-	return i*2;
+	return (i*2);
 }
 
 int right(int i){
-	return i*2+1;
+	return (i*2+1);
 }
 
 int max_heapify(int A[], int k, int n){
-	if(n==1){
-		return 0;
-	}
 
 	int l = left(k);
 	int r = right(k);
 	int largest = l;
 
-	if (l<=n and A[k]>A[largest])
-		largest = k;
-	if(r<=n and A[r]>A[largest])
-		largest = r;
+	// cout << k << " : " << n;
 
-	if(largest!=k){
+	if (l<=n and A[k]>=A[largest])
+		largest = k;
+	if(r<=n and A[r]>=A[largest]){
+		largest = r;
+	}
+
+
+	if(largest!=k and largest<=n){
 		int temp = A[largest];
 		A[largest] = A[k];
 		A[k] = temp;
+		// cout << " : " << largest << ", " << A[largest] << endl;
 		max_heapify(A,largest,n);
 	}
 	return 1;
@@ -41,7 +43,7 @@ int max_heapify(int A[], int k, int n){
 }
 
 int build_max_heap(int A[], int n){
-	for(int i=(n/2);i>=1;i--){
+	for(int i=(n/2);i>0;i--){
 		max_heapify(A,i,n);
 	}
 }
@@ -62,7 +64,7 @@ int main(){
 		cout << A[n-k] << endl;
 	}
 
-	max_heapify(A,1,n);
+	build_max_heap(A,n);
 
 	cout << "Heapified" <<  endl;
 	k=n;
