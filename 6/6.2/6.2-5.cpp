@@ -58,20 +58,19 @@ int main(){
 	srand(time(NULL));
 
 	cout << "Numbers:" << endl;
-
-	while(k){
+	while(k--){
 		A[n-k] = rand() % n+1;
 		cout << A[n-k] << endl;
-		k--;
+		// k--;
 	}
 
-	max_heapify(A,0,n);
+	max_heapify(A,1,n);
 
 	cout << "Heapified" <<  endl;
 	k=n;
-	while(k){
+	while(k--){
 		cout << A[n-k] << endl;
-		k--;
+		// k--;
 	}
 
 	return 0;

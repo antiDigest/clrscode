@@ -20,3 +20,7 @@ CLRS ain't gonna solve itself.
 |[Randomised Select](https://github.com/evamy/clrscode/blob/master/9/9.2/9.2-3.cpp)|O(n)||
 |[Deterministic Select](https://github.com/evamy/clrscode/blob/master/9/9.3/9.3-5.cpp)|O(n)||
 |[Counting Sort](https://github.com/evamy/clrscode/blob/master/8/8.2/8.2-1.cpp)|O(n+k)||
+|[Max Heapify](https://github.com/evamy/clrscode/blob/master/6/6.2/6.2-1.cpp)|O(logn)||
+|[Min Heapify](https://github.com/evamy/clrscode/blob/master/6/6.2/6.2-2.cpp)|O(logn)||
+|[Iterative Max Heapify](https://github.com/evamy/clrscode/blob/master/6/6.2/6.2-5.cpp)|O(logn)||
+|[Build Max Heap](https://github.com/evamy/clrscode/blob/master/6/6.3/6.3-1.cpp)|O(n*logn)||

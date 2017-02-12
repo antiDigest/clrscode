@@ -44,24 +44,27 @@ int min_heapify(int A[], int k, int n){
 int main(){
 	int n, k;
 	cin >> n;
+	// int A[n];
+
 	k=n;
 
 	srand(time(NULL));
-	
+
 	cout << "Numbers:" << endl;
-	while(k){
+
+	while(k--){
 		A[n-k] = rand() % n+1;
 		cout << A[n-k] << endl;
-		k--;
+		// k--;
 	}
 
-	min_heapify(A,0, n);
+	max_heapify(A,1,n);
 
 	cout << "Heapified" <<  endl;
 	k=n;
-	while(k){
+	while(k--){
 		cout << A[n-k] << endl;
-		k--;
+		// k--;
 	}
 
 	return 0;
