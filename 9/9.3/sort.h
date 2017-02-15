@@ -1,9 +1,9 @@
 #include <iostream>
 
-int insertionSort(int A[], int reverse=false){
+int insertionSort(int A[], int n, int reverse=false){
 	int i,j, key;
 	if(reverse){
-		for(j=1;j<6;j++){
+		for(j=1;j<n;j++){
 		key = A[j];
 		i = j-1;
 		while(i>=0 && A[i]<key){
@@ -14,7 +14,7 @@ int insertionSort(int A[], int reverse=false){
 	}
 	}
 	else{
-		for(j=1;j<6;j++){
+		for(j=1;j<n;j++){
 		key = A[j];
 		i = j-1;
 		while(i>=0 && A[i]>key){

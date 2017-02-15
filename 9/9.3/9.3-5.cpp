@@ -47,7 +47,7 @@ int partition(int start, int end){
 	return i;
 }
 
-int Rselect(int B[], int start, int end, int index){
+int select(int B[], int start, int end, int index){
 	// int p;
 	if(start<end){
 		int p = partition(start,end);
@@ -55,16 +55,16 @@ int Rselect(int B[], int start, int end, int index){
 			return B[p];
 		}
 		else if(index<p){
-			return Rselect(B,start,p-1, index);
+			return select(B,start,p-1, index);
 		}
 		else{
-			return Rselect(B, p+1,end, index);
+			return select(B, p+1,end, index);
 		}
 	}
 }
 
 
-int Dselect(int start, int end, int index){
+int Median(int start, int end, int index){
 	// int p;
 	int n = end-start+1;
 	int B[n], r;
@@ -78,7 +78,7 @@ int Dselect(int start, int end, int index){
 		k++;
 	}
 
-	return Rselect(B, 0, k-1, ((k-1)/2));
+	return select(B, 0, k-1, ((k-1)/2));
 
 }
 
@@ -99,7 +99,7 @@ int main(){
 		k--;
 	}
 
-	cout << "Selected Random: " << Dselect(0,n-1,(n/2)) << endl;
+	cout << "Selected Random: " << Median(0,n-1,(n/2)) << endl;
 
 	return 0;
 }

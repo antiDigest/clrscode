@@ -1,17 +1,19 @@
-// Return a "part" sized array from A in the middle of A
+// Deterministic Select
 
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
 
+#include "sort.h"
+
 using namespace std;
 
-int A[100];
+int A[10000];
 
-int insertionSort(int K[], int start, int end, int index){
+int insertionSortIndex(int K[], int start, int end, int index){
 	int i,j, key;
 
-	for(j=start;j<=end;j++){
+	for(j=start+1;j<=end;j++){
 		key = K[j];
 		i = j-1;
 		while(i>=start && K[i]<key){
@@ -47,31 +49,60 @@ int partition(int start, int end){
 	return i;
 }
 
-void output(int K[], int start, int end){
-	for(int i=start; i<=end;i++){
-		cout << K[i] << " ";
-	}
-	cout << endl;
-}
-
-int Rselect(int B[], int start, int end, int index, int part){
-	// int p;
-	if((end-start)>part){
+int select(int B[], int start, int end, int index){
+	
+	if(start<end){
 		int p = partition(start,end);
-		if((end-start)==part){
-			output(B, start, end);
-			return 0;
-		}
-		else if(index==p){
+		if(index==p){
 			return B[p];
 		}
 		else if(index<p){
-			return Rselect(B,start,p-1, index, part);
+			return select(B,start,p-1, index);
 		}
 		else{
-			return Rselect(B, p+1,end, index, part);
+			return select(B, p+1,end, index);
 		}
 	}
+}
+
+
+int Median(int start, int end){
+	// int p;
+	int n = end-start+1;
+	int B[n], r;
+	int k=0;
+	for(int i=start;i<=end;i+=5){
+		r = i+5;
+		if(i+5>end){
+			r=end;
+		}
+		B[k] = insertionSortIndex(A, i, r, 2);
+		k++;
+	}
+
+	return select(B, 0, k-1, ((k-1)/2));
+
+}
+
+int KClosest(int n, int k){
+	int m = Median(0,n);
+
+	cout << "Median: " << A[m] << endl; 
+
+	int dist[n];
+
+	for(int i=0;i<n;i++){
+		dist[i] = abs(A[i]-A[m]);
+	}
+	int delta = select(dist, 0, n, k);
+
+	cout << "K Closest to the median" << endl;
+	for(int i=0;i<n;i++){
+		if(delta>dist[i]){
+			cout << A[i] <<  endl;
+		}
+	}
+	return 0;
 }
 
 int main(){
@@ -91,11 +122,19 @@ int main(){
 		k--;
 	}
 
-	cout << "Partition size: ";
-	int part;
-	cin >> part;
+	cout << "k : ";
+	cin >> k;
+	// cout << "Selected Random: " << Median(0,n-1,(n/2)) << endl;
+	KClosest(n, k);
 
-	cout << "Selected Random: " << Rselect(A, 0,n-1,(n/2), part) << endl;
+	k=n;
+	insertionSort(A, n);
+	cout << "Sorted: " << endl;
+	while(k){
+		// A[n-k] = rand() % n+1;
+		cout << A[n-k] << endl;
+		k--;
+	}
 
 	return 0;
 }
