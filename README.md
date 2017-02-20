@@ -24,3 +24,9 @@ CLRS ain't gonna solve itself.
 |[Min Heapify](https://github.com/evamy/clrscode/blob/master/6/6.2/6.2-2.cpp)|O(logn)||
 |[Iterative Max Heapify](https://github.com/evamy/clrscode/blob/master/6/6.2/6.2-5.cpp)|O(logn)||
 |[Build Max Heap](https://github.com/evamy/clrscode/blob/master/6/6.3/6.3-1.cpp)|O(n*logn)||
+|[Stack](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-1.cpp)|-||
+|[Double Stack](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-2.cpp)|-||
+|[Queue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-3.cpp)|-||
+|[DeQueue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-4.cpp)|-||
+|[Queue using 2 Stacks](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-5.cpp)|-||
+|[Stack using 2 Queues](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-6.cpp)|-||
