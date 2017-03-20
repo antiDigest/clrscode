@@ -28,9 +28,9 @@ These contain all sorts of algorithms and mathematical solutions to relevant/irr
 |[Minimum](https://github.com/evamy/clrscode/blob/master/9/9.1/9.1-1.cpp)|(n+logn-2) comparisons|Chapter 9, section 9.1|
 |[Randomised Select](https://github.com/evamy/clrscode/blob/master/9/9.2/9.2-3.cpp)|O(n)|Chapter 9, section 9.2|
 |[Deterministic Select](https://github.com/evamy/clrscode/blob/master/9/9.3/9.3-5.cpp)|O(n)|Chapter 9, section 9.3|
-|[Stack](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-1.cpp)|-|CHapter 10, section 10.1|
-|[Double Stack](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-2.cpp)|-|CHapter 10, section 10.1|
-|[Queue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-3.cpp)|-|CHapter 10, section 10.1|
-|[DeQueue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-4.cpp)|-|CHapter 10, section 10.1|
-|[Queue using 2 Stacks](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-5.cpp)|-|CHapter 10, section 10.1|
-|[Stack using 2 Queues](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-6.cpp)|-|CHapter 10, section 10.1|
+|[Stack](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-1.cpp)|-|Chapter 10, section 10.1|
+|[Double Stack](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-2.cpp)|-|Chapter 10, section 10.1|
+|[Queue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-3.cpp)|-|Chapter 10, section 10.1|
+|[DeQueue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-4.cpp)|-|Chapter 10, section 10.1|
+|[Queue using 2 Stacks](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-5.cpp)|-|Chapter 10, section 10.1|
+|[Stack using 2 Queues](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-6.cpp)|-|Chapter 10, section 10.1|
