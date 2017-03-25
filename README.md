@@ -1,10 +1,10 @@
 # clrscode
 CLRS ain't gonna solve itself.
 
-##PDF Files:
+## PDF Files:
 These contain all sorts of algorithms and mathematical solutions to relevant/irrelevant programs/chapters. Most of the algorithms mentioned in the book have been implemented as below and the solutions to the problems which are not algorithms are contained in these pdf files. For the time being, these are written solutions and I will try to convert them into book format using latex if time permits.
 
-##
+## Description
 | Algorithm     |  Run Time     | Where  |
 |:-------------:|:-------------:|:-----:|
 |[Linear Search](https://github.com/evamy/clrscode/blob/master/2/2.1/search.h)|O(n)|Chapter 2, section 2.1|
@@ -34,3 +34,8 @@ These contain all sorts of algorithms and mathematical solutions to relevant/irr
 |[DeQueue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-4.cpp)|-|Chapter 10, section 10.1|
 |[Queue using 2 Stacks](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-5.cpp)|-|Chapter 10, section 10.1|
 |[Stack using 2 Queues](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-6.cpp)|-|Chapter 10, section 10.1|
+
+
+
+# Everyone is motivated to star, watch and fork the repository to contribute.
+This is where my motivation comes from.
