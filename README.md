@@ -34,3 +34,6 @@ These contain all sorts of algorithms and mathematical solutions to relevant/irr
 |[DeQueue](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-4.cpp)|-|Chapter 10, section 10.1|
 |[Queue using 2 Stacks](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-5.cpp)|-|Chapter 10, section 10.1|
 |[Stack using 2 Queues](https://github.com/evamy/clrscode/blob/master/10/10.1/10.1-6.cpp)|-|Chapter 10, section 10.1|
+|[Rod Cutting](https://github.com/evamy/clrscode/blob/master/15/15.1/15.1-2.cpp)|-|Chapter 15, section 15.1|
+|[Rod Cutting (min cuts)](https://github.com/evamy/clrscode/blob/master/15/15.1/15.1-3.cpp)|-|Chapter 15, section 15.1|
+|[Fibonacci](https://github.com/evamy/clrscode/blob/master/15/15.1/15.1-5.cpp)|-|Chapter 15, section 15.1|
