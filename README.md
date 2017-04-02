@@ -1,10 +1,10 @@
 # clrscode
 CLRS ain't gonna solve itself.
 
-##PDF Files:
+## PDF Files:
 These contain all sorts of algorithms and mathematical solutions to relevant/irrelevant programs/chapters. Most of the algorithms mentioned in the book have been implemented as below and the solutions to the problems which are not algorithms are contained in these pdf files. For the time being, these are written solutions and I will try to convert them into book format using latex if time permits.
 
-##
+## Description
 | Algorithm     |  Run Time     | Where  |
 |:-------------:|:-------------:|:-----:|
 |[Linear Search](https://github.com/evamy/clrscode/blob/master/2/2.1/search.h)|O(n)|Chapter 2, section 2.1|
@@ -37,3 +37,7 @@ These contain all sorts of algorithms and mathematical solutions to relevant/irr
 |[Rod Cutting](https://github.com/evamy/clrscode/blob/master/15/15.1/15.1-2.cpp)|-|Chapter 15, section 15.1|
 |[Rod Cutting (min cuts)](https://github.com/evamy/clrscode/blob/master/15/15.1/15.1-3.cpp)|-|Chapter 15, section 15.1|
 |[Fibonacci](https://github.com/evamy/clrscode/blob/master/15/15.1/15.1-5.cpp)|-|Chapter 15, section 15.1|
+
+
+# Everyone is encouraged to star, watch and fork the repository to contribute.
+This is where my motivation comes from.
